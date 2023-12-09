@@ -1,1 +1,1 @@
-# Triangle
+# What type is this triangle?
