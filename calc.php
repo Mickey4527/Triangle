@@ -14,7 +14,7 @@
         // check value is numeric or not
         if(is_numeric($side_One) && is_numeric($side_Two) && is_numeric($side_Three)){
             
-            // decimal to 2 digit
+            // decimal to 2 digit 
             $side_one  = round($side_One, 2);
             $side_two  = round($side_Two, 2);
             $side_three  = round($side_Three, 2);
@@ -43,7 +43,7 @@
                 }else{
                     echo "Please enter value upto 2 digit";
                 } 
-                
+
             }
             else{
                 echo "Please enter value between 0 to 100";
