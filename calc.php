@@ -18,7 +18,7 @@
             $side_two  = round($side_two, 2);
             $side_three  = round($side_three, 2);
             // if value < 100
-            if(($side_one && $side_two && $side_three) >= 0 && ($side_one && $side_two && $side_three) <= 100){ //Warning
+            if(($side_one <= 100 && $side_two <= 100 && $side_three <= 100) && ($side_one >= 0 && $side_two >= 0 && $side_three >= 0)){
                 if($side_one + $side_two > $side_three && $side_two + $side_three > $side_one && $side_three + $side_one > $side_two){
                     if($side_one == $side_two && $side_two == $side_three){
                         echo "Equilateral Triangle";
