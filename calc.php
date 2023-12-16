@@ -41,6 +41,9 @@
                     echo "Not a Triangle";
                 }
             }
+            else{
+                echo "Please enter value between 0 to 100";
+            }
         }
         else{
             echo "Please enter numeric value";
