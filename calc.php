@@ -1,5 +1,6 @@
 <?php
 
+    // a, b, c -> side of triangle
     // a + b > c , b + c > a , c + a > b -> triangle
     // a = b = c -> equilateral
     // a = b != c or a = c != b or b = c != a -> isosceles
@@ -9,6 +10,18 @@
 
     // 0.00 <= (a = b = c) => 100.00
 
+    if(isset($_POST['submit'])){
+        if(!empty($_POST['side_one']) && !empty($_POST['side_two']) && !empty($_POST['side_three']))
+        {
+            Triangle($_POST['side_one'], $_POST['side_two'], $_POST['side_three']);
+        }
+        else{
+            echo "Please enter value";
+        }
+    }
+    else{
+        echo "Please enter value";
+    }
 
     function Triangle($side_one, $side_two, $side_three){
         // check value is numeric or not
@@ -46,6 +59,5 @@
         }
     }
 
-    Triangle($_POST['side_one'], $_POST['side_two'], $_POST['side_three']);
     
 ?>

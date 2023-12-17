@@ -25,33 +25,37 @@
         let side_three = document.getElementById('side_three');
 
         side_one.addEventListener('input', function(){
-            if(side_one.value > 100){
+            if(side_one.value > 100 || side_one.value < 0){
                 alert('Please enter value between 0 to 100');
                 side_one.value = '';
             }
             if(side_one.type != 'number'){
                 alert('นายแอบเปลี่ยน type หรอ');
                 side_one.value = '';
+                side_one.type = 'number';
             }
         });
         side_two.addEventListener('input', function(){
-            if(side_two.value > 100){
+            if(side_two.value > 100 || side_two.value < 0){
                 alert('Please enter value between 0 to 100');
                 side_two.value = '';
             }
             if(side_two.type != 'number'){
                 alert('นายแอบเปลี่ยน type หรอ');
                 side_one.value = '';
+                side_one.type = 'number';
+
             }
         });
         side_three.addEventListener('input', function(){
-            if(side_three.value > 100){
+            if(side_three.value > 100 || side_three.value < 0){
                 alert('Please enter value between 0 to 100');
                 side_three.value = '';
             }
             if(side_three.type != 'number'){
                 alert('นายแอบเปลี่ยน type หรอ');
                 side_one.value = '';
+                side_one.type = 'number';
             }
         });
     </script>
